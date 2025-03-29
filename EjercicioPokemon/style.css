@@ -1,0 +1,194 @@
+/* Importación de Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap');
+
+:root {
+    --clr-gray: #ddd;
+}
+
+/* Estilos generales */
+body {
+    font-family: 'Rubik', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fffaf3; /* Fondo pastel cálido */
+}
+
+header {
+    padding: 10px;
+    text-align: center;
+}
+
+.nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav img {
+    height: 50px;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-item {
+    margin: 5px;
+}
+
+.btn-header {
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+}
+
+/* Color para el botón 'Ver todos' */
+#ver-todos {
+    background-color: #ffadad; /* Pastel rosa */
+}
+
+/* Colores según el tipo de Pokémon */
+.normal { background-color: #ffd6a5; }
+.fire { background-color: #ff9aa2; }
+.water { background-color: #9ad0f5; }
+.grass { background-color: #b9fbc0; }
+.electric { background-color: #fff3b0; }
+.ice { background-color: #d0f4de; }
+.fighting { background-color: #f28cac; }
+.poison { background-color: #c1a3e8; }
+.ground { background-color: #f6d6ad; }
+.flying { background-color: #ace7ff; }
+.psychic { background-color: #ffb5e8; }
+.bug { background-color: #d4e157; }
+.rock { background-color: #e6ccb2; }
+.ghost { background-color: #d7bbf6; }
+.dark { background-color: #b56576; }
+.dragon { background-color: #a5d8ff; }
+.steel { background-color: #cddafd; }
+.fairy { background-color: #ffd1dc; }
+
+/* Efecto hover */
+.btn-header:hover {
+    opacity: 0.8;
+}
+
+/* Estilos para el main y las tarjetas de Pokémon */
+main {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.pokemon-todos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.pokemon {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    text-align: center;
+    width: 200px;
+    text-transform: uppercase;
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+}
+
+.pokemon-id-back {
+    position: absolute;
+    top: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 6rem;
+    font-weight: 800;
+    z-index: -1;
+    color: var(--clr-gray);
+}
+
+.pokemon-imagen img {
+    width: 100px;
+    height: 100px;
+}
+
+.pokemon-info {
+    margin-top: 10px;
+}
+
+.nombre-contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.pokemon-id {
+    font-size: 14px;
+    color: #999; /* Color neutro */
+}
+
+.pokemon-nombre {
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.pokemon-tipos {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    margin-top: 10px;
+}
+
+.tipo {
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+}
+
+/* Hacer que el color de los tipos coincida con los botones del header */
+.tipo.normal { background-color: #ffd6a5; }
+.tipo.fire { background-color: #ff9aa2; }
+.tipo.water { background-color: #9ad0f5; }
+.tipo.grass { background-color: #b9fbc0; }
+.tipo.electric { background-color: #fff3b0; }
+.tipo.ice { background-color: #d0f4de; }
+.tipo.fighting { background-color: #f28cac; }
+.tipo.poison { background-color: #c1a3e8; }
+.tipo.ground { background-color: #f6d6ad; }
+.tipo.flying { background-color: #ace7ff; }
+.tipo.psychic { background-color: #ffb5e8; }
+.tipo.bug { background-color: #d4e157; }
+.tipo.rock { background-color: #e6ccb2; }
+.tipo.ghost { background-color: #d7bbf6; }
+.tipo.dark { background-color: #b56576; }
+.tipo.dragon { background-color: #a5d8ff; }
+.tipo.steel { background-color: #cddafd; }
+.tipo.fairy { background-color: #ffd1dc; }
+
+.pokemon-stats {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #777; /* Color pastel oscuro */
+}
