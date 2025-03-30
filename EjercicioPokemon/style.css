@@ -1,16 +1,16 @@
-/* Importación de Google Fonts */
+
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap');
 
 :root {
     --clr-gray: #ddd;
 }
 
-/* Estilos generales */
+
 body {
     font-family: 'Rubik', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #fffaf3; /* Fondo pastel cálido */
+    background-color: #fffaf3; 
 }
 
 header {
@@ -52,12 +52,12 @@ header {
     color: white;
 }
 
-/* Color para el botón 'Ver todos' */
+
 #ver-todos {
-    background-color: #ffadad; /* Pastel rosa */
+    background-color: #ffadad;
 }
 
-/* Colores según el tipo de Pokémon */
+
 .normal { background-color: #ffd6a5; }
 .fire { background-color: #ff9aa2; }
 .water { background-color: #9ad0f5; }
@@ -77,12 +77,12 @@ header {
 .steel { background-color: #cddafd; }
 .fairy { background-color: #ffd1dc; }
 
-/* Efecto hover */
+
 .btn-header:hover {
     opacity: 0.8;
 }
 
-/* Estilos para el main y las tarjetas de Pokémon */
+
 main {
     display: flex;
     justify-content: center;
@@ -164,7 +164,6 @@ main {
     text-transform: uppercase;
 }
 
-/* Hacer que el color de los tipos coincida con los botones del header */
 .tipo.normal { background-color: #ffd6a5; }
 .tipo.fire { background-color: #ff9aa2; }
 .tipo.water { background-color: #9ad0f5; }
@@ -190,5 +189,16 @@ main {
     gap: 10px;
     margin-top: 10px;
     font-size: 14px;
-    color: #777; /* Color pastel oscuro */
+    color: #777; 
 }
+.pokemon:hover {
+    background-color: #82002e63; 
+    color: white; 
+    cursor: pointer; 
+}
+.pokemon:active {
+    transform: scale(1.3); 
+    transition: transform 0.1s ease; 
+}
+
+
